@@ -8,9 +8,9 @@ export const DATA = {
   location: "Varanasi, UP India",
   locationLink: "https://www.google.com/maps/place/Varanasi",
   description:
-    "Upcoming Software Engineer. I love building things and helping people. Very active on GitHub.",
+    "Self Taught Full Stack Developer. Passionate about learning new things. Very active on GitHub.",
   summary:
-    "My name is Pranjal Singh, I am currently pursuing [BTech](/#) Artificial Intelligence and Data Science at [IIIT Kurnool](https://iiitk.ac.in/). I am a skilled [full stack developer](/#projects) passionate about learning Web3 and DevOps. With strong computer science fundamentals, I am eager to explore new opportunities and build impactful projects.",
+    "I am currently pursuing [B-Tech](/#) Artificial Intelligence and Data Science at [IIIT Kurnool](https://iiitk.ac.in/). I am a skilled [full stack developer](/#projects) passionate about learning Web3 and DevOps. With strong computer science fundamentals, I am eager to explore new opportunities and build impactful projects.",
     //` [This is for Bold](link or /#section)
   avatarUrl: "/me.jpg",
   skills: [
@@ -22,13 +22,12 @@ export const DATA = {
     "Postgres",
     "MongoDB",
     "MySQL",
-    "Linux",
+    "Firebase",
     "Nginx",
     "AWS/EC2/S3",
     "Docker",
     "C++",
     "Typescript",
-    "Rust",
     "Python",
   ],
   navbar: [
@@ -86,7 +85,7 @@ export const DATA = {
   ],
   education: [
     {
-      school: "Indian Institute Of Information Technology, Kurnool",
+      school: "Indian Institute Of Information Technology,Kurnool",
       href: "https://iiitk.ac.in/",
       degree: "B Tech: Artificial Intelligence and Data Science",
       logoUrl: "/IIIT_logo.png",
@@ -104,12 +103,12 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
+      title: "ONLINE WALLET - Wallet Wave",
+      href: "https://wallet-wave.vercel.app/",
       dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "Digital Wallet for Everyday Payments.",
       technologies: [
         "Next.js",
         "Typescript",
@@ -123,13 +122,13 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://wallet-wave.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/wallet-wave.png",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+        "",
     },
     {
       title: "Magic UI",

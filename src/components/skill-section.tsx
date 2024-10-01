@@ -2,10 +2,39 @@ import { NextPage } from 'next'
 import { DATA } from "@/data/resume";
 import BlurFade from "@/components/magicui/blur-fade";
 import { Badge } from "@/components/ui/badge";
+import {IconCloud} from "@/components/magicui/icon-cloud";
 
 interface Props {
     BLUR_FADE_DELAY: number
 }
+
+const slugs = [
+    "typescript",
+    "javascript",
+    "java",
+    "react",
+    "html5",
+    "css3",
+    "nodedotjs",
+    "express",
+    "nextdotjs",
+    "prisma",
+    "amazonaws",
+    "postgresql",
+    "firebase",
+    "nginx",
+    "vercel",
+    "testinglibrary",
+    "jest",
+    "cypress",
+    "docker",
+    "git",
+    "github",
+    "gitlab",
+    "visualstudiocode",
+    "sonarqube",
+    "figma",
+  ];
 
 const SkillSection: NextPage<Props> = ({BLUR_FADE_DELAY}) => {
   return (
@@ -21,7 +50,14 @@ const SkillSection: NextPage<Props> = ({BLUR_FADE_DELAY}) => {
             </BlurFade>
             ))}
         </div>
+
+        <div className="m-auto  flex size-2/4 max-w-lg items-center justify-center overflow-hidden">
+      <IconCloud iconSlugs={slugs} />
+    </div>  
+
         </div>
+
+    
     </section>
   )
 }
