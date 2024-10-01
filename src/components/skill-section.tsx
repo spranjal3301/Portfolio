@@ -51,7 +51,7 @@ const SkillSection: NextPage<Props> = ({BLUR_FADE_DELAY}) => {
             ))}
         </div>
 
-        <div className="m-auto  flex size-2/4 max-w-lg items-center justify-center overflow-hidden">
+        <div className="m-auto  flex size-full md:size-2/4 max-w-lg items-center justify-center overflow-hidden">
       <IconCloud iconSlugs={slugs} />
     </div>  
 

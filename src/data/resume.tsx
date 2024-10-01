@@ -103,21 +103,19 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "ONLINE WALLET - Wallet Wave",
+      title: "ONLINE WALLET",
       href: "https://wallet-wave.vercel.app/",
       dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
-        "Digital Wallet for Everyday Payments.",
+        "Allows users and merchants to securely add funds, send money, manage transactions, and receive payments.",
       technologies: [
         "Next.js",
         "Typescript",
         "PostgreSQL",
         "Prisma",
         "TailwindCSS",
-        "Stripe",
         "Shadcn UI",
-        "Magic UI",
       ],
       links: [
         {
@@ -131,31 +129,29 @@ export const DATA = {
         "",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "Blogsly – Blogging Platform",
+      href: "https://blogsly.vercel.app/",
+      dates: "June 2023 - August 2023",
       active: true,
       description:
         "Designed, developed and sold animated UI components for developers.",
       technologies: [
         "Next.js",
         "Typescript",
-        "PostgreSQL",
+        "Appwrite",
         "Prisma",
         "TailwindCSS",
-        "Stripe",
         "Shadcn UI",
-        "Magic UI",
       ],
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
+          href: "https://blogsly.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/spranjal3301/",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -209,8 +205,6 @@ export const DATA = {
         "Prisma",
         "TailwindCSS",
         "Shadcn UI",
-        "Magic UI",
-        "Stripe",
         "Cloudflare Workers",
       ],
       links: [
