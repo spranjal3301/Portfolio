@@ -78,12 +78,24 @@ const TypingEffect: React.FC<TypingEffectProps> = ({
         <motion.span className="inline-block">
           {displayedText}
           {startTyping && (
-            <span
-              className={cn(
-                "inline-block w-[7px] h-[17px] bg-white relative top-[1.5px] ml-[2px]",
-                isCompleted && "animate-blink"
-              )}
-            />
+            isCompleted &&  (<motion.span
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              duration: 0.6,
+    
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
+            className={cn(
+              "inline-block w-[7px]  h-[17px] bg-white ml-1"
+            )}
+          ></motion.span>)
+            
           )}
         </motion.span>
       </motion.div>

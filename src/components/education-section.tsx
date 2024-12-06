@@ -11,7 +11,7 @@ interface Props {
 const EducationSection: NextPage<Props> = ({BLUR_FADE_DELAY}) => {
   return (
     <section id="education">
-        <div className="flex min-h-0 flex-col gap-y-3">
+        <div className="flex min-h-0 flex-col gap-y-3 bg-transparent [text-shadow:0_0_10px_rgba(0,255,0,0.5)]">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>

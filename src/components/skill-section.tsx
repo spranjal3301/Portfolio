@@ -39,14 +39,14 @@ const slugs = [
 const SkillSection: NextPage<Props> = ({BLUR_FADE_DELAY}) => {
   return (
         <section id="skills">
-        <div className="flex min-h-0 flex-col gap-y-3">
+        <div className="flex min-h-0 flex-col gap-y-3 pt-10">
         <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
+            <h2 className="text-xl font-bold [text-shadow:0_0_10px_rgba(0,255,0,0.5)]">Skills</h2>
         </BlurFade>
         <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
             <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+                <Badge  key={skill}>{skill}</Badge>
             </BlurFade>
             ))}
         </div>
