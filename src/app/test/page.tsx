@@ -9,7 +9,8 @@ const Page: NextPage<Props> = () => {
 
   return(
       <div className='flex justify-center items-center  w-full'>
-          <Profiles/>
+          {/* <Profiles/> */}
+          test 
       </div>
 
   )

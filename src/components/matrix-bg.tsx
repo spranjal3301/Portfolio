@@ -36,8 +36,6 @@ const MatrixRain: React.FC<MatrixRainProps> = ({
     
     canvas.height = height || container.clientHeight;
     canvas.width =  width || container.clientWidth;
-    console.log(container.clientWidth)
-
 
     const fontSize = 14;
     const columns = Math.floor(canvas.width / fontSize);

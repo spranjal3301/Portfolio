@@ -12,13 +12,13 @@ const EducationSection: NextPage<Props> = ({BLUR_FADE_DELAY}) => {
   return (
     <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3 bg-transparent [text-shadow:0_0_10px_rgba(0,255,0,0.5)]">
-          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+          <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>
           {DATA.education.map((education, id) => (
             <BlurFade
               key={education.school}
-              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
+              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
             >
               <ResumeCard
                 key={education.school}

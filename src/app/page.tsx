@@ -1,16 +1,16 @@
 import AboutSection from "@/components/about-section";
 import ContactSection from "@/components/contact-section";
 import EducationSection from "@/components/education-section";
-import HackathonSection from "@/components/hackathon-section";
-import HeroSection,{HeroSection2} from "@/components/hero-section";
-import MatrixRain from "@/components/matrix-bg";
+// import HackathonSection from "@/components/hackathon-section";
+import {HeroSection2} from "@/components/hero-section";
+// import MatrixRain from "@/components/matrix-bg";
 import Profiles from "@/components/Profiles";
 import ProjectSection from "@/components/project-section";
 import SkillSection from "@/components/skill-section";
-import WorkSection from "@/components/work-section";
+// import WorkSection from "@/components/work-section";
 
 
-const BLUR_FADE_DELAY = 0;// 0.04
+const BLUR_FADE_DELAY = 0.02;// 0.04
 
 export default function Page() {
   return (
@@ -19,7 +19,7 @@ export default function Page() {
         <AboutSection BLUR_FADE_DELAY={BLUR_FADE_DELAY} />
         {/* <WorkSection BLUR_FADE_DELAY={BLUR_FADE_DELAY} /> */}
         <EducationSection BLUR_FADE_DELAY={BLUR_FADE_DELAY} />
-        <Profiles/>
+        <Profiles BLUR_FADE_DELAY={BLUR_FADE_DELAY}/>
         <SkillSection BLUR_FADE_DELAY={BLUR_FADE_DELAY} />
         <ProjectSection BLUR_FADE_DELAY={BLUR_FADE_DELAY} />
         {/* <HackathonSection BLUR_FADE_DELAY={BLUR_FADE_DELAY} /> */}

@@ -3,8 +3,9 @@
 import Image from "next/image";
 import { Tabs } from "./ui/tabs";
 import Link from "next/link";
+import BlurFade from "./magicui/blur-fade";
 
-const Profiles = () => {
+const Profiles = ({BLUR_FADE_DELAY}:{BLUR_FADE_DELAY:number}) => {
   const tabs = [
     {
       title: "LeetCode",
@@ -88,9 +89,11 @@ const Profiles = () => {
 
   return (
     <>
+      <BlurFade key={'profile'} delay={BLUR_FADE_DELAY * 7}>
       <div className="h-[20rem] md:h-[28rem] [perspective:1000px]  flex flex-col w-full  items-start justify-start my-0 bg-transparent m-2">
         <Tabs tabs={tabs} />
       </div>
+      </BlurFade>
     </>
   );
 };
