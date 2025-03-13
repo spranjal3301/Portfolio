@@ -113,6 +113,38 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Link - Instagram Automation Tool",
+      href: "https://one-linkx.vercel.app/",
+      dates: "Jan 2025 - Feb 2025",
+      active: true,
+      description:
+        "Deliver fast responses to Comments, DMs,  Story Reply and Mention .Automatically answer every reaction using AI .",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "Instagram API",
+        "Stripe/Razorpay",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://one-linkx.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/spranjal3301/link/",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "https://cdn.llm.report/openai-demo.mp4",
+    },
+    {
       title: "ONLINE WALLET",
       href: "https://wallet-wave.vercel.app/",
       dates: "Jan 2024 - Feb 2024",
@@ -167,39 +199,6 @@ export const DATA = {
       ],
       image: "",
       video: "https://cdn.magicui.design/bento-grid.mp4",
-    },
-    {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
-      active: true,
-      description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
     },
     {
       title: "Automatic Chat",

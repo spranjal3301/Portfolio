@@ -10,7 +10,7 @@ import SkillSection from "@/components/skill-section";
 // import WorkSection from "@/components/work-section";
 
 
-const BLUR_FADE_DELAY = 0.02;// 0.04
+const BLUR_FADE_DELAY = 0.04;// 0.04
 
 export default function Page() {
   return (
