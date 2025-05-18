@@ -1,47 +1,111 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
+# ComponentSphere
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+ComponentSphere is a collection of reusable components that you can copy and paste into your web apps. It's designed to streamline development and promote consistency across projects.
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+<video autoplay loop muted playsinline>
+  <source src="https://cdn.magicui.design/bento-grid.mp4" type="video/mp4">
+</video>
 
-# Features
+## About
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+ComponentSphere provides a curated set of UI components, modules, and utilities built with Next.js, React, and Tailwind CSS. Inspired by [shadcn/ui](https://ui.shadcn.com/), [MagicUI](https://magic-ui.design/), and [Aceternity UI](https://ui.aceternity.com/), it focuses on offering high-quality, reusable solutions that adhere to modern web development practices.
 
-# Getting Started Locally
+## Philosophy
 
-1. Clone this repository to your local machine:
+**I believe reusability is a cornerstone of efficient and scalable software development.** Writing the same code to create identical components in multiple projects is a significant waste of time and effort. It violates the DRY principle and introduces redundancy, increasing the likelihood of inconsistencies and maintenance overhead.
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+**Reusable components demonstrate that the team values efficiency and quality.** It shows thoughtful and systematic approaches to challenges across the board.
 
-2. Move to the cloned directory
+**Ultimately, adhering to DRY principles doesn't just save time; it fosters trust in engineering discipline.**
 
-   ```bash
-   cd portfolio
-   ```
+## Technical Implementation
 
-3. Install dependencies:
+ComponentSphere leverages several interesting techniques and technologies:
 
-   ```bash
-   pnpm install
-   ```
+- [Next.js App Router](https://nextjs.org/docs/app) for modern React server components architecture
+- [Content Collections](https://content-collections.dev/) for MDX content management
+- [Tailwind CSS](https://tailwindcss.com/) with custom animations and extended theme configuration
+- [Radix UI](https://www.radix-ui.com/) for accessible component primitives
+- [TypeScript](https://www.typescriptlang.org/) for type safety and improved developer experience
+- [MDX](https://mdxjs.com/) with custom rehype/remark plugins for rich documentation
+- Dynamic component registry system for showcasing UI components
 
-4. Start the local Server:
+## Project Structure
 
-   ```bash
-   pnpm dev
-   ```
+```
+ComponentSphere/
+├── __registry__/              # Auto-generated component registry
+├── .content-collections/      # Generated content from MDX files
+├── .vscode/                   # VS Code configuration
+├── public/                    # Static assets
+├── src/
+│   ├── app/                   # Next.js App Router pages
+│   │   ├── (docs)/            # Documentation routes
+│   │   └── (marketing)/       # Marketing pages
+│   ├── components/            # React components
+│   │   ├── ui/                # UI component library
+│   │   └── sections/          # Page section components
+│   ├── config/                # Site configuration
+│   ├── content/               # MDX content files
+│   │   ├── docs/              # Documentation content
+│   │   └── pages/             # Static page content
+│   ├── hooks/                 # React hooks
+│   ├── lib/                   # Utility functions
+│   ├── registry/              # Component registry source
+│   │   └── default/           # Default component styles
+│   │       ├── ui/            # UI component definitions
+│   │       └── example/       # Component examples
+│   ├── scripts/               # Build scripts
+│   └── styles/                # Global styles
+└── tailwind.config.ts         # Tailwind configuration
+```
 
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+- `__registry__/`: Auto-generated registry that maps component names to their implementations for dynamic loading
+- `src/content/`: MDX files for documentation and static pages processed by Content Collections
+- `src/registry/`: Source components that are exposed in the component library for users to copy
+- `src/app/(docs)/`: Documentation application routes using Next.js App Router
+- `src/app/(marketing)/`: Marketing pages for the ComponentSphere website
 
-# License
+## Notable Technologies
 
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+- [Geist Font](https://vercel.com/font) - Vercel's modern sans-serif typeface
+- [Content Collections](https://content-collections.dev/) - For MDX content management and transformation
+- [rehype-pretty-code](https://rehype-pretty-code.netlify.app/) - Syntax highlighting for code blocks
+- [Framer Motion](https://www.framer.com/motion/) - Animation library for React
+- [Tailwind CSS Animate](https://github.com/jamiebuilds/tailwindcss-animate) - Animation utilities for Tailwind
+- [Radix UI](https://www.radix-ui.com/) - Unstyled, accessible UI component primitives
+- [Lucide React](https://lucide.dev/) - Beautiful, consistent icon set
+
+## Requirements
+
+- Node.js 18 or later
+- pnpm (preferred package manager)
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/componentsphere.git
+
+# Navigate to the project directory
+cd componentsphere
+
+# Install dependencies with pnpm
+pnpm install
+
+# Start the development server
+pnpm dev
+```
+
+Visit [http://localhost:3000](http://localhost:3000) to see the application.
+
+## Contributing
+
+We welcome contributions! Please see our [contribution guidelines](https://component-sphere.vercel.app/docs/contribution) for details on how to get started.
+
+## License
+
+[MIT](LICENSE)
+
+---
+
